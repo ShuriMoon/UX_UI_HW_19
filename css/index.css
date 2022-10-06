@@ -9,6 +9,50 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3C4043 ;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #3C4043 ;
+}
+
+p {
+    font-size: 1rem;
+    color: #3C4043 ;
+    padding:2em 0;
+    line-height:1.5em;
+}
+
+.primary-button {
+    font-size: 16px; 
+    padding: 10px;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    background-color: #EC41AE;
+    color: white;
+    border: 0px;
+    text-transform: uppercase;
+    cursor: pointer; 
+ }
+ 
+ .primary-button:hover {
+     background-color: #d91792;
+ 
+ }
+ 
+
+/*<!--  navigation section  -->*/
 .navigation {
     background-color: #3C4043;
 }
@@ -41,6 +85,7 @@ ul {
     margin-left:auto;
 }
 
+/*<!--  Hero section  -->*/
 #content {
     background-color: #3C4043;
     width: 100%;
@@ -58,29 +103,7 @@ ul {
    flex: 1 1 0;
 }
 
-.h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5rem;
-    color: aliceblue;
-}
 
-h2 {
-    font-size: 2rem;
-    color: #3C4043 ;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: #3C4043 ;
-}
-
-p {
-    font-size: 1rem;
-    color: #3C4043 ;
-    padding:2em 0;
-    line-height:1.5em;
-}
 .intro-text {
     color: aliceblue;
     font-size:1.5em ;
@@ -88,12 +111,27 @@ p {
     line-height:1.5em;
 }
 
+/*<!--  Skill section  -->*/
+
 .headingSkill {
     text-align: center;
     padding: 15px 5px;
     font-size: 30px;
     background-color: aliceblue;
 }
+
+.flexContainer {
+    background-color: aliceblue;
+    display: flex;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+  }
+
+/*<!--  Work section  -->*/
 .headingWork {
     text-align: center;
     padding: 15px 5px;
@@ -101,12 +139,47 @@ p {
     background-color: rgb(250, 234, 249);
 }
 
+#work {
+    background-color: rgb(250, 234, 249)
+}
+
+.myWork{
+    background-color: rgb(250, 234, 249);
+    padding: 15px;
+}
+
+.myAreaL {
+    grid-area: myAreaL;
+}
+
+.myArea {
+    grid-area: myArea;
+}
+
+.workGrid {
+
+    display:grid;
+    padding: 15px;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "myAreaL myArea";
+    align-items: center;
+    row-gap: 1em;
+}
+
+.gridIMG {
+    width: 90%;
+ }
+
+/*<!--  About section  -->*/
 .headingMe {
     text-align: center;
     padding: 15px 5px;
     font-size: 30px;
     background-color: aliceblue;
 }
+
+/*<!--  Footer section  -->*/
+
 .footer {
     background-color:#3C4043;
     text-align: center;
@@ -125,53 +198,9 @@ p {
 }
 
 
-.primary-button {
-   font-size: 16px; 
-   padding: 10px;
-   width: 160px;
-   height: 60px;
-   text-align: center;
-   background-color: #EC41AE;
-   color: white;
-   border: 0px;
-   text-transform: uppercase;
-   cursor: pointer; 
-}
-
-.primary-button:hover {
-    background-color: #d91792;
-
-}
-
-.resume-button {
-    font-size: 16px; 
-    padding: 10px;
-    width: 160px;
-    height: 60px;
-    text-align: center;
-    background-color: #3C4043;
-    color: white;
-    border: 5px;
-    border-color: #EC41AE;
-    text-transform: uppercase;
-    cursor: pointer; 
- }
- 
- .resume-button:hover {
-    background-color: #3C4043;
- }
 
 /*<!--  My UX Skills section coded using CSS flex -->*/
-.flexContainer {
-    background-color: aliceblue;
-    display: flex;
-    padding: 60px 30px;
-    text-align: center;
-  }
-  .flexContainer div {
-    width: 33%;
-    padding: 25px;
-  }
+
 /* #mySkill { 
     background-color: aliceblue;
     width: 100%;
@@ -217,32 +246,7 @@ p {
 
 /*<!--  My Work section coded using CSS flex -->*/
 
-.myWork{
-    background-color: rgb(250, 234, 249);
-    padding: 15px;
-}
 
-.myAreaL {
-    grid-area: myAreaL;
-}
-
-.myArea {
-    grid-area: myArea;
-}
-
-.workGrid {
-
-    display:grid;
-    padding: 15px;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "myAreaL myArea";
-    align-items: center;
-    row-gap: 1em;
-}
-
-.gridIMG {
-    width: 90%;
- }
 
  #about {
     background-color: aliceblue;
