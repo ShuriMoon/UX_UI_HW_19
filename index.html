@@ -18,9 +18,11 @@
 
         <nav class="inline-block">
             <ul>
-                <li class="inline-block"> About</li>
-                <li class="inline-block"> Skills</li>
-                <li class="inline-block"> Work</li>
+                <a href="#about">
+                <li class="inline-block"> 
+                    About</li></a>
+                <a href="#work">
+                <li class="inline-block"> Work</li></a>
                 <li class="inline-block"> Contact</li>
             </ul>
         </nav>
@@ -30,7 +32,7 @@
     <div class="aboutMe">
         <h1 class="h1">Hi, I'm Hyoun</h1>
         <p class="intro-text">I am a solutions-oriented UX/UI designer with 15-year design experiences combining creativity and usability viewpoints.</p>
-        <a href="#myWork">
+        <a href="#work">
         <button class="primary-button">View Project</button>
         </a>
 
@@ -39,12 +41,12 @@
         <img src="images/Shuri-face-2023 1.png">
     </div>
 </div>
-<h2 class="headingSkill">My UX Skills</h2>
+<h2 id="skill" class="headingSkill">My UX Skills</h2>
 <section class="flexContainer">
     <div>
         <img src="./images/UX_icon.png" style="width:94px">
         <h3> User Research </h3>
-        <p>I always strive to create memorable experiences that based on users’ research.</p>
+        <p>I always strive to create memorable experiences that based on user research.</p>
     </div>
 
     <div>
@@ -62,7 +64,7 @@
     </div>
 </section>
 <h2 class="headingWork">My Work</h2>
-<section ID="myWork">
+<section  id="work" class="myWork">
 
 
     <div class="workGrid">
@@ -74,7 +76,8 @@
             <p>Interfaith America is a non-profit organization dedicated to promoting religious inclusion
                  in public life. We redesigned the website easy to navigate and more actionable so that 
                  users can find what they need.</p>
-            <button class="primary-button">View Project</button>
+            <a href="https://www.shurinuri.com/interfaith-america/" target="_blank">
+             <button class="primary-button">View Project</button></a>
         </div>
         </div>
 
@@ -86,7 +89,8 @@
             <h3>Waste Smart</h3>
             <p>The Waste Smart is an app to track the perishables in the kitchen in an easy way. 
                 With Waste Smart, users are able to save money and reduce waste.</p>
-            <button class="primary-button">View Project</button>
+            <a href="https://www.shurinuri.com/waste-smart/" target="_blank">
+                <button class="primary-button">View Project</button></a>
         </div>
         </div>
         
@@ -98,19 +102,47 @@
             <h3>WeHere</h3>
             <p>WeHere is a travel-food app that helps to get authentic local food in an easy way while 
             connecting users with fun activities and new community.</p>
-            <button class="primary-button">View Project</button>
+            <a href="https://www.shurinuri.com/wehere/" target="_blank">
+            <button class="primary-button">View Project</button></a>
         </div>
         </div>
-  
+
+       
+<section id="about">
+    <h2 class="headingMe">About Me</h2>
+ <div class="workGrid">
+        <div class="myAreaL">
+            <img class="gridIMG" src="./images/golf.jpg">
+        </div>
+        <div class="myArea">
+            <h3>Hi, I'm Hyoun Shuri.</h3>
+            <p>I love to help people with bring up design solutions while communicating with them in my own creativity and collaborating with team members. 
+                I enjoy golfing in my free time and cooking a Korean traditional dish, Kimbap.</p>
+                <a href="https://drive.google.com/file/d/1UGRuawI-xZBK-Fs06PILAPFkfdE07fMr/view?usp=sharing" target="_blank">
+                <button class="primary-button">View Resume</button> </a>
+        </div>
+        </div>
+
         <!-- <h2>View all projects</h2> -->
  </section>
 
  <footer class="footer">
+    <h2 class="footerH2"> Let's contact</h2>
+    
     <ul class="footerUI">
-        <li class="inline-block">About</li>
-        <li class="inline-block">Skills</li>
-        <li class="inline-block">Work</li>
-        <li class="inline-block">Contact</li>
+        <a href="https://www.linkedin.com/in/shurimoon/" target="_blank">
+        <img src="./images/linkedin-icon.png"></a>
+        <!-- <a href="#work"> -->
+        <!-- <li class="inline-block"><img src="./images/facebook-icon.png"></li></a> -->
+    </ul>
+    
+    <ul class="footerUI">
+        <a href="#skill">
+        <li class="inline-block">Skills</li></a>
+        <a href="#work">
+        <li class="inline-block">Work</li></a>
+        <a href="#about">
+        <li class="inline-block">About</li></a>
     </ul>
 </footer>
 </body>

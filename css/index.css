@@ -20,6 +20,10 @@ html {
     padding: 15px 20px;
 }
 
+.inline-block:hover {
+    color: #d63b9d;
+
+}
 .logo {
     width: 23%;
     padding: 1%;
@@ -96,10 +100,24 @@ p {
     font-size: 30px;
     background-color: rgb(250, 234, 249);
 }
-.footer{
+
+.headingMe {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+.footer {
     background-color:#3C4043;
     text-align: center;
     width: 100%;
+}
+
+.footerH2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .footerUI {
@@ -117,12 +135,12 @@ p {
    color: white;
    border: 0px;
    text-transform: uppercase;
-   cursor: pointer;
-   
+   cursor: pointer; 
 }
 
 .primary-button:hover {
     background-color: #d91792;
+
 }
 
 .resume-button {
@@ -199,7 +217,7 @@ p {
 
 /*<!--  My Work section coded using CSS flex -->*/
 
-#myWork{
+.myWork{
     background-color: rgb(250, 234, 249);
     padding: 15px;
 }
@@ -226,7 +244,10 @@ p {
     width: 90%;
  }
 
-
+ #about {
+    background-color: aliceblue;
+    padding: 15px;
+}
 @media only screen and (max-width:600px) {
 
     #content {
