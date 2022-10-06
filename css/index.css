@@ -1,0 +1,227 @@
+* {
+    padding:0;
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navigation {
+    background-color: #3C4043;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    color: aliceblue;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: left;
+ }
+    
+nav {
+    width: 73%;
+    padding: 1%;
+    text-align: right;
+}
+
+ul {
+    width: 80%;
+    margin-left:auto;
+}
+
+#content {
+    background-color: #3C4043;
+    width: 100%;
+    display:flex;
+    align-items:center;
+}
+
+.aboutMe {
+    background-color: #3C4043;
+    padding-left: 20px;
+    flex: 1 1 0;
+}
+
+.heroImg {
+   flex: 1 1 0;
+}
+
+.h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3C4043 ;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #3C4043 ;
+}
+
+p {
+    font-size: 1rem;
+    color: #3C4043 ;
+    padding:2em 0;
+    line-height:1.5em;
+}
+.intro-text {
+    color: aliceblue;
+    font-size:1.5em ;
+    padding:2.5em 0;
+    line-height:1.5em;
+}
+
+.headingSkill {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+.headingWork {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    background-color: rgb(250, 234, 249);
+}
+.footer{
+    background-color:#3C4043;
+    text-align: center;
+    width: 100%;
+}
+
+.footerUI {
+    width: 100%;
+}
+
+
+button {
+   font-size: 16px; 
+   padding: 15px;
+   width: 200px;
+   height: 60px;
+   text-align: center;
+   background-color: #EC41AE;
+   color: white;
+   border: 0px;
+}
+/*<!--  My UX Skills section coded using CSS flex -->*/
+.flexContainer {
+    background-color: aliceblue;
+    display: flex;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+  }
+/* #mySkill { 
+    background-color: aliceblue;
+    width: 100%;
+    padding: 2em 4em;
+}
+
+.flexContainer {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+    padding-top: 2em;   
+    gap: 4em;
+    text-align: center;
+}
+
+.flexChild {
+    flex: 1 1 0;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.flexChild h3 {
+    padding-top:1em;
+}
+
+#ux-icon, #ui-icon, #code-icon {
+    height:150px;
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#ux-icon {
+    background-image: url('/images/UX_icon.png');
+}
+#ui-icon {
+    background-image: url('/images/UI_icon.png');
+}
+#code-icon {
+    background-image: url('/images/CODE_icon.png');
+}*/
+
+/*<!--  My Work section coded using CSS flex -->*/
+
+.myWork{
+    background-color: rgb(250, 234, 249);
+    padding: 15px;
+}
+
+.myAreaL {
+    grid-area: myAreaL;
+}
+
+.myArea {
+    grid-area: myArea;
+}
+
+.workGrid {
+
+    display:grid;
+    padding: 15px;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "myAreaL myArea";
+    align-items: center;
+    row-gap: 1em;
+}
+
+.gridIMG {
+    width: 90%;
+ }
+
+
+@media only screen and (max-width:600px) {
+
+    #content {
+        flex-direction:column;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #3C4043 ;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+    
+    .flexContainer div {
+        width: 100%;
+        padding: 25px;
+      }
+    .workGrid {
+        display:block;
+        width: 90%;
+    }
+}
