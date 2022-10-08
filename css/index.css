@@ -72,10 +72,11 @@ p {
     width: 23%;
     padding: 1%;
     text-align: left;
+    margin-left: 25px;
  }
     
 nav {
-    width: 73%;
+    width: 74%;
     padding: 1%;
     text-align: right;
 }
@@ -85,7 +86,7 @@ ul {
     margin-left:auto;
 }
 
-/*<!--  Hero section  -->*/
+/*<!--new Hero section  -->*/
 #content {
     background-color: #3C4043;
     width: 100%;
@@ -95,7 +96,8 @@ ul {
 
 .aboutMe {
     background-color: #3C4043;
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
     flex: 1 1 0;
 }
 
@@ -111,14 +113,28 @@ ul {
     line-height:1.5em;
 }
 
-/*<!--  Skill section  -->*/
+/*<!--old Hero section  -->*/
+.newheroImg {
+    background-color: #3C4043;
+    /* padding: 100px 15px; */
+  }
+.newcontent {
+    /* max-width: 300px; */
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 50px; */
+    background-color: #3C4043;
+    text-align: center;
+  }
 
+/*<!--  Skill section  -->*/
 .headingSkill {
     text-align: center;
     padding: 15px 5px;
     font-size: 30px;
     background-color: aliceblue;
 }
+
 
 .flexContainer {
     background-color: aliceblue;
@@ -173,9 +189,14 @@ ul {
 /*<!--  About section  -->*/
 .headingMe {
     text-align: center;
-    padding: 15px 5px;
+    padding: 15px;
     font-size: 30px;
     background-color: aliceblue;
+}
+
+#about {
+    background-color: aliceblue;
+    padding: 15px;
 }
 
 /*<!--  Footer section  -->*/
